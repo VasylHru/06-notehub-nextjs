@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { fetchNoteById } from "@/lib/api";
 
-import css from "./NoteDetailsPage.module.css";
+import css from "@/components/NotesPage/NotesPage.module.css";
 
 export default function NoteDetailsClient() {
   const { id } = useParams();
