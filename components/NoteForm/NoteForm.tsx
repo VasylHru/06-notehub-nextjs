@@ -1,11 +1,12 @@
 
+"use client";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 import type { NoteTag } from "../../types/note";
 import css from "./NoteForm.module.css";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { createNote } from "../../services/noteService";
+import { createNote } from "@/lib/api";
 
 interface NoteFormProps {
   onCancel: () => void;
@@ -105,3 +106,5 @@ export const NoteForm = ({ onCancel }: NoteFormProps) => {
     </Formik>
   );
 };
+
+export default NoteForm

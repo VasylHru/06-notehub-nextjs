@@ -5,7 +5,7 @@ interface SearchBoxProps {
   onChange: (value: string) => void;
 }
 
-export const SearchBox = ({ value, onChange }: SearchBoxProps) => {
+ const SearchBox = ({ value, onChange }: SearchBoxProps) => {
   return (
     <input
       type="text"
@@ -16,3 +16,4 @@ export const SearchBox = ({ value, onChange }: SearchBoxProps) => {
     />
   );
 };
+export default SearchBox

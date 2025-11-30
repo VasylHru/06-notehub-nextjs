@@ -7,7 +7,7 @@ interface PaginationProps {
   onPageChange: (page: number) => void;
 }
 
-export const Pagination = ({
+ const Pagination = ({
   pageCount,
   currentPage,
   onPageChange,
@@ -31,3 +31,4 @@ export const Pagination = ({
     />
   );
 };
+export  default Pagination
